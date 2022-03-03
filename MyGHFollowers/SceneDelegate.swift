@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  MyGHFollowers
-//
-//  Created by smitesh patel on 2022-03-02.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -17,6 +10,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        guard let myWindowScene = (scene as? UIWindowScene) else { return }
+        
+        window = UIWindow(frame: myWindowScene.coordinateSpace.bounds) // makes it fill up full width
+        window?.windowScene = myWindowScene
+        window?.rootViewController = TabBarController()
+        window?.makeKeyAndVisible()
+        configureNavigationBar()
+    }
+    
+    func configureNavigationBar() {
+        UINavigationBar.appearance().tintColor = .systemTeal
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

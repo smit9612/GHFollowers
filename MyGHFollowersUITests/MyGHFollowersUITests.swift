@@ -1,10 +1,3 @@
-//
-//  MyGHFollowersUITests.swift
-//  MyGHFollowersUITests
-//
-//  Created by smitesh patel on 2022-03-02.
-//
-
 import XCTest
 
 class MyGHFollowersUITests: XCTestCase {

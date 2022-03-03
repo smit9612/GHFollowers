@@ -1,13 +1,6 @@
-//
-//  AppDelegate.swift
-//  MyGHFollowers
-//
-//  Created by smitesh patel on 2022-03-02.
-//
-
 import UIKit
 
-@main
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 

@@ -1,10 +1,3 @@
-//
-//  MyGHFollowersTests.swift
-//  MyGHFollowersTests
-//
-//  Created by smitesh patel on 2022-03-02.
-//
-
 import XCTest
 @testable import MyGHFollowers
 
